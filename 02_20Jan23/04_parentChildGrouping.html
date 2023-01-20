@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Child and Grouping</title>
+</head>
+<body>
+    <!-- https://white-receptionist-hywmn.pwskills.app:5500/02_20Jan23/04_parentChildGrouping.html -->
+<!-- Parent Child -->
+    <!-- p>h1>ol>li -->
+    <p>
+        <h1>
+            <ol>
+                <li></li>
+            </ol>
+        </h1>
+    </p>
+    
+    <div>
+        <div class="dusraDiv">
+            <p>
+                <p id="paraID">
+                    <p><img src="" alt="notAvailable"></p>
+                </p>
+            </p>
+        </div>
+    </div>
+
+<!-- agar hame 5 div ya koi bhi tag chahiye to  -->
+<!-- div*5 -->
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+<!-- using above rule -->
+div>div.list>p>li*5
+<div>
+    <div class="list">
+        <p>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </p>
+    </div>
+</div>
+
+
+
+
+
+<!-- Sibling or brotherhood -->
+
+div>p+p+p
+<div>
+    <p></p>
+    <p></p>
+    <p></p>
+</div>
+
+
+div>div.list>ol>li*5
+<div>
+    <div class="list">
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+</div>
+
+
+
+<!-- grouping -->
+
+div>(nav>li*5)+div>li*2 
+
+<div>
+    <nav>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </nav>
+    <div>
+        <li></li>
+        <li></li>
+    </div>
+</div>
+
+
+div>(div>div>li*5)+(p>ol>li*3)+(div>h2{Rohit})
+<div>
+    <div>
+        <div>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </div>
+    </div>
+    <p>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </p>
+    <div>
+        <h2>Rohit</h2>
+    </div>
+</div>
+</body>
+</html>
